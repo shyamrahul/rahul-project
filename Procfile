@@ -1,3 +1,3 @@
-web:python flaskCheck.py runserver
-web: gunicorn flaskCheck.wsgi --log-file -
+web: python flaskCheck.py runserver
+web: gunicorn flaskcheck.wsgi --log-file -
 heroku ps:scale web=1
